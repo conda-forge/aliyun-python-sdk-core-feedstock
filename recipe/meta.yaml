@@ -1,5 +1,5 @@
 {% set name = "aliyun-python-sdk-core" %}
-{% set version = "2.13.7" %}
+{% set version = "2.13.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bfc61372c187ac26a17bfd8614408e2f59bd289874eee65494b27edbc11eb441
+  sha256: 3fa35d03beb23591f29ef9590e679ada7767d6d7e3376f8ea508dfc9569ae1c4
 
 build:
   number: 0
