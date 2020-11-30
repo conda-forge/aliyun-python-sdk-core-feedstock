@@ -1,5 +1,5 @@
 {% set name = "aliyun-python-sdk-core" %}
-{% set version = "2.13.29" %}
+{% set version = "2.13.30" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 019fbe5e1727adaeff8b063b70bc7df2cbf9c91a2ea0c83a1e5849c0de470806
+  sha256: b32632e2ce60ebf66a23039ebe43a2dc8ed8c9423684590837801909faa39e47
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - jmespath >=0.9.3,<1.0.0
-    - pycryptodome >=3.4.7  # [unix]
+    - cryptography >=2.9.2
 
 test:
   imports:
